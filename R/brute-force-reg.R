@@ -35,7 +35,7 @@ TestIt <- function(kmid1, kmid2, timeid, model, trimper=NULL)
   
 	options(scipen=999) # supress sci. notation
 	
-  conn2 <-odbcConnect("LOCAL_2014EXP_X64", uid="dev", pwd="mom5069!")
+  conn2 <-odbcConnect("LOCAL_2014EXP_X64", uid="dev", pwd="******")
 
   # get data
   tsql = "SET NOCOUNT ON\nEXEC DEV.un.usp_GetRegData %d, %d, %d"
@@ -200,7 +200,7 @@ PlotIt <- function(type)
 {
 	
 	# open sql server conn'n
-	conn <-odbcConnect("LOCAL_2014EXP_X64", uid="dev", pwd="mom5069!")
+	conn <-odbcConnect("LOCAL_2014EXP_X64", uid="dev", pwd="******")
 	
 	sql = "
 	select 
@@ -270,7 +270,7 @@ Main <- function ()
 
 	
 # open sql server conn'n
-conn <-odbcConnect("LOCAL_2014EXP_X64", uid="dev", pwd="mom5069!")
+conn <-odbcConnect("LOCAL_2014EXP_X64", uid="dev", pwd="******")
 
 # start
 ptm <- proc.time()
