@@ -28,12 +28,12 @@ rows <- data.frame(
 )
 
 #
-# displays stats (lm & anaova) as wel las charts (qq and scatter)
+# displays stats (lm & anaova) as well as charts (qq and scatter)
 #
 TestIt <- function(kmid1, kmid2, timeid, model, trimper=NULL) 
 {
   
-	options(scipen=999) # supress sci. notation
+  options(scipen=999) # supress sci. notation
 	
   conn2 <-odbcConnect("LOCAL_2014EXP_X64", uid="dev", pwd="******")
 
